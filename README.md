@@ -82,3 +82,12 @@ To stop docker container
 '''
 docker stop <container_id>
 '''
+
+TO INSTALL REQUIRED LIBRARIES
+'''
+python setup.py install
+'''
+OR
+'''
+pip install -e .
+'''
