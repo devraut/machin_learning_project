@@ -91,3 +91,8 @@ OR
 '''
 pip install -e .
 '''
+
+Install ipykernel
+'''
+pip install ipykernel
+'''

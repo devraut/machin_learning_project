@@ -13,7 +13,7 @@ def index():
         housing=ProjectException(e,sys)
         logging.info(housing.error_message)
         logging.info("I am testing the logging module")
-    return "Starting ML project"
+    return "Testing debug"
 
 if __name__=="__main__":
     app.run(debug=True)
