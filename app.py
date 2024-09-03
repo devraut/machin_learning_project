@@ -1,7 +1,6 @@
 from flask import Flask
 from housing.logger import logging
-from housing.exception import ProjectException
-import sys
+from housing.exception import HousingException
 
 app=Flask(__name__)
 
@@ -10,7 +9,7 @@ def index():
     try:
         raise Exception("I am testing custom exception")
     except Exception as e:
-        housing=ProjectException(e,sys)
+        housing=HousingException(e,sys)
         logging.info(housing.error_message)
         logging.info("I am testing the logging module")
     return "Testing debug"
